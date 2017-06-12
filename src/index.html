@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>ElecsPay - лёгкий способ принимать платежи</title>
+		<meta name="keywords" content="ElecsPay, прием платежей">
+		<meta name="description" content="web-page description">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="shortcut icon" href="http://www.elecsnet.ru/favicon.ico" type="image/x-icon">
+
+	</head>
+	<body>
+
+    <div class="wrapper">
+
+      <a href="#close" class="overlay" id="thanks"></a>
+      <div class="popup">
+        <a href="#close" class="popup-close">крестик</a>
+          <p class="form-caption">Спасибо за оставленную заявку!<br>Мы перезвоним Вам в ближайшее рабочее время (с 9.00 - 18.00)</p>
+      </div>
+
+      <header class="header">
+        <div class="header__inner container">
+          <div class="header__text">Уже заполнили регистрационную форму?</div>
+          <a href="#" target="_blank" class="btn btn--green header__btn">Войти в личный кабинет</a>
+        </div>
+      </header>
+
+      <main class="main">
+
+        <section class="intro">
+          <div class="intro__inner container">
+            <div class="intro__img">
+              <img src="img/intro.png" srcset="img/intro@2x.png 2x" alt="ElecsPay">
+            </div>
+            <div class="intro__content">
+              <div class="intro__title">Лёгкий способ принимать платежи</div>
+              <a href="#" class="btn intro__btn">Подключиться к ElecsPay</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="advantages">
+          <div class="advantages__inner container">
+            <div class="advantages__item">
+              <div class="advantages__item-img advantages__item-img--start"></div>
+              <p class="advantages__item-description">Старт приема платежей в течении двух рабочих дней</p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img advantages__item-img--zone"></div>
+              <p class="advantages__item-description">Прием платежей по всей России (в том числе в Крыму)</p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img advantages__item-img--easy"></div>
+              <p class="advantages__item-description">Без технических доработок</p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img advantages__item-img--economy"></div>
+              <p class="advantages__item-description">Экономия на кассе</p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img advantages__item-img--points"></div>
+              <p class="advantages__item-description">Прием платежей наличными в более чем 4000 точках</p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img advantages__item-img--online"></div>
+              <p class="advantages__item-description">Просмотр платежей в режиме онлайн</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="questions">
+          <div class="questions__inner container">
+            <h2 class="section-title">У Вас есть вопросы?</h2>
+            <p class="section-title__label">отправьте заявку и мы Вас проконсультируем</p>
+            <form method="post" action="send.php" class="questions__form">
+              <input type="text" class="input" placeholder="Введите Ваше имя" name="name" required>
+              <input type="tel" class="input" placeholder="Введите Ваш телефон" name="phone" id="phone" required>
+              <button class="btn" type="submit">Отправить</button>
+            </form>
+            <p class="section-title__label">Или позвоните нам по номеру <a href="tel:+74956621500">+7(495) 662-15-00</a>, доб. 589</p>
+          </div>
+        </section>
+
+        <section class="start">
+          <div class="start__inner container">
+            <h2 class="section-title section-title--start">Как начать прием платежей?</h2>
+            <div class="start__row">
+              <div class="start__item">
+                <div class="start__item-img start__item-img--step1"></div>
+                <p class="start__item-description">Заполнить регистрационную форму</p>
+              </div>
+              <div class="start__item">
+                <div class="start__item-img start__item-img--step2"></div>
+                <p class="start__item-description">Ждать звонка/смс или письма на Ваш e-mail</p>
+              </div>
+              <div class="start__item">
+                <div class="start__item-img start__item-img--step3"></div>
+                <p class="start__item-description">Провести тестовый платёж</p>
+              </div>
+            </div>
+            <div class="start__row">
+              <div class="start__item">
+                <div class="start__item-img start__item-img--step4"></div>
+                <p class="start__item-description">Сообщить клиенту id организации</p>
+              </div>
+              <div class="start__item">
+                <div class="start__item-img start__item-img--step5"></div>
+                <p class="start__item-description">Успешно принимать платежи</p>
+              </div>
+            </div>
+            <div class="start__row-btn">
+              <a href="" class="btn">Подключиться к ElecsPay</a>
+            </div>
+            <div class="start__description start__description--1">
+              <a href="payment_instructions.pdf" target="_blank" class="start__description-files">Инструкция по проведению платежей с использованием регистрационной формы</a>
+            </div>
+            <div class="start__description">
+              <a href="instructions_for_completing.jpg" target="_blank" class="start__description-files">Инструкция по заполнению регистрационной формы юридического лица</a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <div class="footer__inner container">
+          <div class="footer__row">
+            <div class="footer__text">123557, г. Москва, Электрический пер., д.3/10, стр.1, 4 этаж</div>
+            <a href="tel:+74956621500" class="footer__link">+7(495) 662-15-00 (доб. 589)</a>
+          </div>
+          <div class="footer__row">
+            <div class="footer__text">© Компания «Элекснет», 2006-2017</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.min.js"></script>
+    <script type="text/javascript">
+      $(function($){
+        $("#phone").mask("+7(999) 999-9999");
+      });
+    </script>
+	</body>
+</html>

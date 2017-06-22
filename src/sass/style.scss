@@ -84,12 +84,13 @@ body {
     content: "";
     position: absolute;
     transform: rotate(-3deg);
-    top: -150px;
+    top: -57px;
     left: -1000px;
     z-index: 1;
     width: 5000px;
     height: 540px;
     @media ($mobile-width) {
+      top: -170px;
       height: 280px;
       transform: rotate(-5deg);
     }
@@ -110,16 +111,152 @@ body {
 .intro__img {
   width: 604px;
   margin-right: 40px;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  display: block;
 
-  img {
+  .intro__bg {
     display: block;
     width: 100%;
   }
 
-  @media ($mobile-width) {
-    width: 100%;
-    margin-bottom: 50px;
+  @media ($tablet-width) {
+    width: 320px;
   }
+
+  @media ($mobile-width) {
+    width: 300px;
+    margin: 0 auto 50px;
+  }
+}
+
+.intro__content-img-wrap {
+    position: absolute;
+    height: 85px;
+    width: 296px;
+    top: 77px;
+    left: 127px;
+
+    @media ($tablet-width) {
+      width: 150px;
+      height: 43px;
+      top: 49px;
+      left: 77px;
+
+    }
+
+    @media ($mobile-width) {
+      width: 150px;
+      height: 43px;
+      top: 43px;
+      left: 67px;
+    }
+}
+
+.intro__content-img {
+    height: 85px;
+    position: absolute;
+    top: 0;
+
+    @media ($tablet-width) {
+      height: 43px;
+    }
+
+    @media ($mobile-width) {
+      height: 43px;
+    }
+}
+
+.intro__content-img--head {
+    width: 85px;
+    left: 0;
+    z-index: 5;
+    transition: all 0.3s ease;
+
+    .intro__img:hover & {
+        animation: toRight 1.7s ease;
+    }
+
+    @media ($tablet-width) {
+      width: 43px;
+
+      .intro__img:hover & {
+          animation: none;
+      }
+    }
+
+    @media ($mobile-width) {
+      width: 43px;
+
+      .intro__img:hover & {
+          animation: none;
+      }
+    }
+}
+
+@keyframes toRight {
+    0% {
+        left: 0px;
+    }
+
+    40% {
+        left: 211px;
+    }
+
+    50% {
+        left: 211px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.intro__content-img--body {
+    width: 249px;
+    right: 0;
+    z-index: 4;
+
+    .intro__img:hover & {
+        animation: hide 1.7s ease;
+    }
+
+    @media ($tablet-width) {
+      width: 125px;
+
+      .intro__img:hover & {
+          animation: none;
+      }
+    }
+
+    @media ($mobile-width) {
+      width: 125px;
+
+      .intro__img:hover & {
+          animation: none;
+      }
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .intro__content {
@@ -277,6 +414,7 @@ body {
       width: 82px;
       height: 83px;
       background-image: url("../img/economy@2x.png");
+      left: 47.5%;
   }
 
   &--points:after {
@@ -373,18 +511,16 @@ body {
   font-size: 15px;
   border: none;
   box-shadow: inset 1px 1px 3px 0px #c4c4c4;
-  border: 2px solid #e3e1e1;
+  border: 2px solid $light-blue;
   margin-right: 40px;
   transition: $transition;
 
   &:hover {
     border: 2px solid $orange;
-    box-shadow: inset 1px 1px 2px 0 #ed9b21;
   }
 
   &:focus {
     border: 2px solid $orange;
-    box-shadow: inset 1px 1px 2px 0 #ed9b21;
   }
 
   @media ($tablet-width) {
